@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		237532C621A4049900B6352E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237532C521A4049900B6352E /* AppDelegate.swift */; };
-		237532C821A4049900B6352E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237532C721A4049900B6352E /* ViewController.swift */; };
 		237532CB21A4049900B6352E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237532C921A4049900B6352E /* Main.storyboard */; };
 		237532CD21A4049A00B6352E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237532CC21A4049A00B6352E /* Assets.xcassets */; };
 		237532D021A4049A00B6352E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237532CE21A4049A00B6352E /* LaunchScreen.storyboard */; };
 		237532DB21A4049A00B6352E /* MyWikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237532DA21A4049A00B6352E /* MyWikiTests.swift */; };
 		237532E621A4049A00B6352E /* MyWikiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237532E521A4049A00B6352E /* MyWikiUITests.swift */; };
+		237532F421A405B400B6352E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237532F321A405B400B6352E /* MainViewController.swift */; };
+		237532F621A4064A00B6352E /* CustomAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237532F521A4064A00B6352E /* CustomAPI.swift */; };
+		23A7F2D921A4086D008C3934 /* MyWiki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7F2D821A4086D008C3934 /* MyWiki.swift */; };
+		23A7F2DC21A408AF008C3934 /* UIView_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7F2DA21A408AF008C3934 /* UIView_extension.swift */; };
+		23A7F2DD21A408AF008C3934 /* LeftPaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7F2DB21A408AF008C3934 /* LeftPaddedTextField.swift */; };
+		258EC7466A52687846B215C3 /* Pods_MyWikiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320E20216F752B16A9D36C96 /* Pods_MyWikiUITests.framework */; };
+		334EC48A179BBB3ADBC6DA69 /* Pods_MyWiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706D8D69F33CB0A3E8BA22EA /* Pods_MyWiki.framework */; };
+		C37139EC1EA4A44A6DF98812 /* Pods_MyWikiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086842835807948A97D95BE3 /* Pods_MyWikiTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		086842835807948A97D95BE3 /* Pods_MyWikiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWikiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CEBB938068C5EFB6EB5C7A7 /* Pods-MyWikiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWikiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWikiUITests/Pods-MyWikiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2374C72C29864A66CB85E4CC /* Pods-MyWiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWiki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWiki/Pods-MyWiki.debug.xcconfig"; sourceTree = "<group>"; };
 		237532C221A4049900B6352E /* MyWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		237532C521A4049900B6352E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		237532C721A4049900B6352E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		237532CA21A4049900B6352E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		237532CC21A4049A00B6352E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		237532CF21A4049A00B6352E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,17 @@
 		237532E121A4049A00B6352E /* MyWikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		237532E521A4049A00B6352E /* MyWikiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWikiUITests.swift; sourceTree = "<group>"; };
 		237532E721A4049A00B6352E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		237532F321A405B400B6352E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		237532F521A4064A00B6352E /* CustomAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAPI.swift; sourceTree = "<group>"; };
+		23A7F2D821A4086D008C3934 /* MyWiki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWiki.swift; sourceTree = "<group>"; };
+		23A7F2DA21A408AF008C3934 /* UIView_extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_extension.swift; sourceTree = "<group>"; };
+		23A7F2DB21A408AF008C3934 /* LeftPaddedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftPaddedTextField.swift; sourceTree = "<group>"; };
+		320E20216F752B16A9D36C96 /* Pods_MyWikiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWikiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58554CB156A127363E91469E /* Pods-MyWikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWikiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWikiTests/Pods-MyWikiTests.release.xcconfig"; sourceTree = "<group>"; };
+		639088BA2462214DB220B549 /* Pods-MyWikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWikiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWikiTests/Pods-MyWikiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		706D8D69F33CB0A3E8BA22EA /* Pods_MyWiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BB188FC4D0CB59C77679F2 /* Pods-MyWikiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWikiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWikiUITests/Pods-MyWikiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A3FCD916D56E3C0492683313 /* Pods-MyWiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWiki/Pods-MyWiki.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334EC48A179BBB3ADBC6DA69 /* Pods_MyWiki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37139EC1EA4A44A6DF98812 /* Pods_MyWikiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				258EC7466A52687846B215C3 /* Pods_MyWikiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +104,8 @@
 				237532D921A4049A00B6352E /* MyWikiTests */,
 				237532E421A4049A00B6352E /* MyWikiUITests */,
 				237532C321A4049900B6352E /* Products */,
+				E0244787D9540FC66F6B497F /* Pods */,
+				CD0E06D21C69167C90472B9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +123,12 @@
 			isa = PBXGroup;
 			children = (
 				237532C521A4049900B6352E /* AppDelegate.swift */,
-				237532C721A4049900B6352E /* ViewController.swift */,
 				237532C921A4049900B6352E /* Main.storyboard */,
+				237532F521A4064A00B6352E /* CustomAPI.swift */,
+				23A7F2DA21A408AF008C3934 /* UIView_extension.swift */,
+				23A7F2DB21A408AF008C3934 /* LeftPaddedTextField.swift */,
+				23A7F2D821A4086D008C3934 /* MyWiki.swift */,
+				237532F321A405B400B6352E /* MainViewController.swift */,
 				237532CC21A4049A00B6352E /* Assets.xcassets */,
 				237532CE21A4049A00B6352E /* LaunchScreen.storyboard */,
 				237532D121A4049A00B6352E /* Info.plist */,
@@ -125,6 +154,29 @@
 			path = MyWikiUITests;
 			sourceTree = "<group>";
 		};
+		CD0E06D21C69167C90472B9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				706D8D69F33CB0A3E8BA22EA /* Pods_MyWiki.framework */,
+				086842835807948A97D95BE3 /* Pods_MyWikiTests.framework */,
+				320E20216F752B16A9D36C96 /* Pods_MyWikiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0244787D9540FC66F6B497F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2374C72C29864A66CB85E4CC /* Pods-MyWiki.debug.xcconfig */,
+				A3FCD916D56E3C0492683313 /* Pods-MyWiki.release.xcconfig */,
+				639088BA2462214DB220B549 /* Pods-MyWikiTests.debug.xcconfig */,
+				58554CB156A127363E91469E /* Pods-MyWikiTests.release.xcconfig */,
+				1CEBB938068C5EFB6EB5C7A7 /* Pods-MyWikiUITests.debug.xcconfig */,
+				73BB188FC4D0CB59C77679F2 /* Pods-MyWikiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 237532EA21A4049A00B6352E /* Build configuration list for PBXNativeTarget "MyWiki" */;
 			buildPhases = (
+				C5746AD2C52991DCF94F465B /* [CP] Check Pods Manifest.lock */,
 				237532BE21A4049900B6352E /* Sources */,
 				237532BF21A4049900B6352E /* Frameworks */,
 				237532C021A4049900B6352E /* Resources */,
+				21F5F7229EA2733CAC62275E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 237532ED21A4049A00B6352E /* Build configuration list for PBXNativeTarget "MyWikiTests" */;
 			buildPhases = (
+				A5584BD3887C918C8A845BA0 /* [CP] Check Pods Manifest.lock */,
 				237532D221A4049A00B6352E /* Sources */,
 				237532D321A4049A00B6352E /* Frameworks */,
 				237532D421A4049A00B6352E /* Resources */,
@@ -167,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 237532F021A4049A00B6352E /* Build configuration list for PBXNativeTarget "MyWikiUITests" */;
 			buildPhases = (
+				49A30F724D9259363DCBD00F /* [CP] Check Pods Manifest.lock */,
 				237532DD21A4049A00B6352E /* Sources */,
 				237532DE21A4049A00B6352E /* Frameworks */,
 				237532DF21A4049A00B6352E /* Resources */,
@@ -251,13 +307,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21F5F7229EA2733CAC62275E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyWiki/Pods-MyWiki-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AloeStackView/AloeStackView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AloeStackView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyWiki/Pods-MyWiki-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49A30F724D9259363DCBD00F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWikiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5584BD3887C918C8A845BA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWikiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5746AD2C52991DCF94F465B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWiki-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		237532BE21A4049900B6352E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				237532C821A4049900B6352E /* ViewController.swift in Sources */,
+				23A7F2DC21A408AF008C3934 /* UIView_extension.swift in Sources */,
+				237532F621A4064A00B6352E /* CustomAPI.swift in Sources */,
+				23A7F2DD21A408AF008C3934 /* LeftPaddedTextField.swift in Sources */,
+				23A7F2D921A4086D008C3934 /* MyWiki.swift in Sources */,
 				237532C621A4049900B6352E /* AppDelegate.swift in Sources */,
+				237532F421A405B400B6352E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +589,7 @@
 		};
 		237532EB21A4049A00B6352E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2374C72C29864A66CB85E4CC /* Pods-MyWiki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +608,7 @@
 		};
 		237532EC21A4049A00B6352E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FCD916D56E3C0492683313 /* Pods-MyWiki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +627,7 @@
 		};
 		237532EE21A4049A00B6352E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639088BA2462214DB220B549 /* Pods-MyWikiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +649,7 @@
 		};
 		237532EF21A4049A00B6352E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58554CB156A127363E91469E /* Pods-MyWikiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +671,7 @@
 		};
 		237532F121A4049A00B6352E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CEBB938068C5EFB6EB5C7A7 /* Pods-MyWikiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +692,7 @@
 		};
 		237532F221A4049A00B6352E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73BB188FC4D0CB59C77679F2 /* Pods-MyWikiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
