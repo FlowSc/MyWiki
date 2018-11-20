@@ -31,6 +31,8 @@ class MainViewController: UIViewController {
                     
                     lbl.text = _todaywikis[i].title ?? ""
                     lbl.numberOfLines = 0
+                    print(_todaywikis[i].mobilepageurl)
+                    print(_todaywikis[i].originalImageUrl)
                     
                     self.aloeStackView.addRow(lbl)
                     
@@ -72,8 +74,5 @@ class ThumnailView:UIView, Tappable {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
-    
-    
+
 }

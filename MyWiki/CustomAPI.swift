@@ -22,6 +22,9 @@ struct CustomAPI {
         
         
         Alamofire.request("\(DOMAINURL)/feed/onthisday/events/11/22", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
+            
+            print("\(DOMAINURL)/feed/onthisday/events/11/22")
+            print("DOMWIN")
             switch response.result {
                 
             case .success(let value):

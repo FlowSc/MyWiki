@@ -42,7 +42,7 @@ class Wiki:Mappable {
         pageid <- map["\(loc).pageid"]
         searchTitle <- map["\(loc).title"]
         timestamp <- map["\(loc).timestamp"]
-        mobilepageurl <- map["\(loc).mobile.page"]
+        mobilepageurl <- map["\(loc).content_urls.mobile.page"]
         extract <- map["\(loc).extract"]
         extract_html <- map["\(loc).extract_html"]
         originalImageUrl <- map["\(loc).originalimage.source"]
