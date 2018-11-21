@@ -11,7 +11,8 @@ target 'MyWiki' do
 	pod 'SnapKit'
 	pod 'AloeStackView'
 	pod 'ObjectMapper'
-
+	pod 'FSCalendar'
+	pod 'Kingfisher'
   target 'MyWikiTests' do
     inherit! :search_paths
     # Pods for testing

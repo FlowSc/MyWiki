@@ -18,6 +18,9 @@
 		23A7F2D921A4086D008C3934 /* MyWiki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7F2D821A4086D008C3934 /* MyWiki.swift */; };
 		23A7F2DC21A408AF008C3934 /* UIView_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7F2DA21A408AF008C3934 /* UIView_extension.swift */; };
 		23A7F2DD21A408AF008C3934 /* LeftPaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7F2DB21A408AF008C3934 /* LeftPaddedTextField.swift */; };
+		23A7F2DF21A4F244008C3934 /* Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7F2DE21A4F244008C3934 /* Standard.swift */; };
+		23A7F2E121A4FE4E008C3934 /* DetailWikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7F2E021A4FE4E008C3934 /* DetailWikiViewController.swift */; };
+		23A7F2E321A503B5008C3934 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7F2E221A503B5008C3934 /* CalendarViewController.swift */; };
 		258EC7466A52687846B215C3 /* Pods_MyWikiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320E20216F752B16A9D36C96 /* Pods_MyWikiUITests.framework */; };
 		334EC48A179BBB3ADBC6DA69 /* Pods_MyWiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706D8D69F33CB0A3E8BA22EA /* Pods_MyWiki.framework */; };
 		C37139EC1EA4A44A6DF98812 /* Pods_MyWikiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086842835807948A97D95BE3 /* Pods_MyWikiTests.framework */; };
@@ -61,6 +64,9 @@
 		23A7F2D821A4086D008C3934 /* MyWiki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWiki.swift; sourceTree = "<group>"; };
 		23A7F2DA21A408AF008C3934 /* UIView_extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_extension.swift; sourceTree = "<group>"; };
 		23A7F2DB21A408AF008C3934 /* LeftPaddedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftPaddedTextField.swift; sourceTree = "<group>"; };
+		23A7F2DE21A4F244008C3934 /* Standard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standard.swift; sourceTree = "<group>"; };
+		23A7F2E021A4FE4E008C3934 /* DetailWikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWikiViewController.swift; sourceTree = "<group>"; };
+		23A7F2E221A503B5008C3934 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		320E20216F752B16A9D36C96 /* Pods_MyWikiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWikiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58554CB156A127363E91469E /* Pods-MyWikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWikiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWikiTests/Pods-MyWikiTests.release.xcconfig"; sourceTree = "<group>"; };
 		639088BA2462214DB220B549 /* Pods-MyWikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWikiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWikiTests/Pods-MyWikiTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +130,10 @@
 			children = (
 				237532C521A4049900B6352E /* AppDelegate.swift */,
 				237532C921A4049900B6352E /* Main.storyboard */,
+				23A7F2E221A503B5008C3934 /* CalendarViewController.swift */,
+				23A7F2E021A4FE4E008C3934 /* DetailWikiViewController.swift */,
 				237532F521A4064A00B6352E /* CustomAPI.swift */,
+				23A7F2DE21A4F244008C3934 /* Standard.swift */,
 				23A7F2DA21A408AF008C3934 /* UIView_extension.swift */,
 				23A7F2DB21A408AF008C3934 /* LeftPaddedTextField.swift */,
 				23A7F2D821A4086D008C3934 /* MyWiki.swift */,
@@ -319,6 +328,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyWiki/Pods-MyWiki-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AloeStackView/AloeStackView.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -329,6 +340,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AloeStackView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -411,12 +424,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A7F2DF21A4F244008C3934 /* Standard.swift in Sources */,
 				23A7F2DC21A408AF008C3934 /* UIView_extension.swift in Sources */,
 				237532F621A4064A00B6352E /* CustomAPI.swift in Sources */,
 				23A7F2DD21A408AF008C3934 /* LeftPaddedTextField.swift in Sources */,
 				23A7F2D921A4086D008C3934 /* MyWiki.swift in Sources */,
 				237532C621A4049900B6352E /* AppDelegate.swift in Sources */,
+				23A7F2E321A503B5008C3934 /* CalendarViewController.swift in Sources */,
 				237532F421A405B400B6352E /* MainViewController.swift in Sources */,
+				23A7F2E121A4FE4E008C3934 /* DetailWikiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +611,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QV6Q7SLDQ7;
 				INFOPLIST_FILE = MyWiki/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,7 +619,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = seongchan.MyWiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -614,6 +631,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QV6Q7SLDQ7;
 				INFOPLIST_FILE = MyWiki/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,7 +639,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = seongchan.MyWiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

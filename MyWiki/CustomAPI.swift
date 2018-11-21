@@ -17,14 +17,20 @@ struct CustomAPI {
     
    static let DOMAINURL = "https://en.wikipedia.org/api/rest_v1"
     
-    
-    static func getTodayWiki(completion:(([Wiki]?)->())?) {
+    static func getTodayWiki(date:Date, completion:(([Wiki]?)->())?) {
         
         
-        Alamofire.request("\(DOMAINURL)/feed/onthisday/events/11/22", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
+//        let todayDate = Date()
+        
+        let aa = Standard.shared.dFormatter.string(from: date)
+        
+        let aaa = aa.split(separator: "/")
+        
+        print(aaa)
+        
+        Alamofire.request("\(DOMAINURL)/feed/onthisday/events/\(aaa[0])/\(aaa[1])", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
             
-            print("\(DOMAINURL)/feed/onthisday/events/11/22")
-            print("DOMWIN")
+            
             switch response.result {
                 
             case .success(let value):
@@ -55,12 +61,7 @@ struct CustomAPI {
                 guard let completion = completion else {return}
                 
                 completion(wikis)
-                
-//                Mapper<Wiki>().map(JSON: <#T##[String : Any]#>)
-                
-                
-                
-                
+
             case .failure(let error):
                 guard let completion = completion else {return}
                 completion(nil)

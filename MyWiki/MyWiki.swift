@@ -23,14 +23,15 @@ class Wiki:Mappable {
     var originalImageUrl:String?
     var thumnailImageUrl:String?
     var searchTitle:String?
-    
+    var myComment:String?
+    var saveDate:String?
+    var isFavorite:Bool?
     
     
     
     required convenience init?(map: Map) {
         self.init()
     }
-    
     
     
     func mapping(map: Map) {

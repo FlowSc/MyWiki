@@ -1,6 +1,8 @@
 PODS:
   - Alamofire (4.7.3)
   - AloeStackView (1.0.1)
+  - FSCalendar (2.8.0)
+  - Kingfisher (4.10.1)
   - ObjectMapper (3.3.0)
   - SnapKit (4.2.0)
   - SwiftyJSON (4.2.0)
@@ -8,6 +10,8 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AloeStackView
+  - FSCalendar
+  - Kingfisher
   - ObjectMapper
   - SnapKit
   - SwiftyJSON
@@ -16,6 +20,8 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AloeStackView
+    - FSCalendar
+    - Kingfisher
     - ObjectMapper
     - SnapKit
     - SwiftyJSON
@@ -23,10 +29,12 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AloeStackView: d22c006da4510db5e220968234174654b5ed6ea5
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 3a156afa87621de6d6a37a7027871f4f317bd6e6
+PODFILE CHECKSUM: f948df0465bbb7b8ce09f9e2b90f52df552f575c
 
 COCOAPODS: 1.5.3
